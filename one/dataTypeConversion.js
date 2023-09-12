@@ -31,3 +31,18 @@ let number = 33;
 let valueofnumber = String(number)
 console.log(valueofnumber);
 console.log(typeof (valueofnumber))
+
+
+//*  OPERATIONS *//
+
+let value = 33;
+let negvalue = -value;
+console.log(negvalue);
+
+/* concatination */
+
+let str1= "hello"
+let str2 = " hale"
+
+let str3= str1+str2;
+console.log(str3);
