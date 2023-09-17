@@ -10,3 +10,7 @@ console.log(undefined >=0);
 // in comparison '>,<,<=,>='  -> there conversion happen 
 
 // 'STRICT CHECK' 
+ // '==='
+
+ console.log("2"===2);
+ 
