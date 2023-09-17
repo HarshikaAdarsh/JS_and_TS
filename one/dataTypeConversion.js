@@ -39,6 +39,13 @@ let value = 33;
 let negvalue = -value;
 console.log(negvalue);
 
+// string to number conversion 
+
+console.log("1"+2);//Output : 12
+console.log(1+"2"); //output : 12
+console.log("1"+2+2);//Output : 122 
+console.log(1+2+"2"); //output : 32  // reason : according to ECMAScript - string at first place will lead to the output like this 
+
 /* concatination */
 
 let str1= "hello"
