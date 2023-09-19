@@ -11,3 +11,9 @@
  console.log(`Hello my name is ${name} amd my Repo Count is ${repoCount}`);
 
  const gameName = new String ('alexxxx') // key value pairs 
+
+ console.log(gameName[0]);
+ console.log(gameName.__proto__);
+
+ console.log(gameName.length);
+ console.log(gameName.toUpperCase());
