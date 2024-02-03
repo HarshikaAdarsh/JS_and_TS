@@ -7,7 +7,7 @@ let valueInNumber = Number(score) // converting score into number
 console.log(typeof valueInNumber);  //datatype conversion
 console.log(valueInNumber); // it will who 'NAN' which is not a number
 
-/* 
+/*   
  what is actually convertable 
 
  "33" - from string to no = 33
