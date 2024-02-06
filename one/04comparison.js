@@ -8,7 +8,7 @@ console.log(undefined >=0);
 
 // In eqaulity '==' -> there is no conversion happen
 // in comparison '>,<,<=,>='  -> there conversion happen 
-
+// coversion can happen in NAN or 0 
 // 'STRICT CHECK' 
  // '==='
 
