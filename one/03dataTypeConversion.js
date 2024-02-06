@@ -17,7 +17,7 @@ console.log(valueInNumber); // it will who 'NAN' which is not a number
 
 
 //boolean
-let isloggedIn = 1;
+let isloggedIn = " ";
  
 let booleanIsLoggedIn = Boolean(isloggedIn)
 console.log(booleanIsLoggedIn);
@@ -41,6 +41,7 @@ console.log(negvalue);
 
 // string to number conversion 
 
+console.log(2**3);//for power 2^3
 console.log("1"+2);//Output : 12
 console.log(1+"2"); //output : 12
 console.log("1"+2+2);//Output : 122 
