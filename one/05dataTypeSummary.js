@@ -1,5 +1,12 @@
 /* 
+the reason for categorising in Primitive and non- primitive 
+is they way it store in memory 
+and how we access the data
+
 Primitive data type => 7
+its call by value => when we try to copy the dat from one place to another
+then it will copy the original value not reference
+
   String 
   Number
   Boolean
