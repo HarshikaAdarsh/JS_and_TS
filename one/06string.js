@@ -37,3 +37,10 @@
 
  console.log(url.replace('%20', '-'))
  console.log(url.includes('alex'))
+
+
+ const newStringtwo = "alex-edward-johnson"
+ console.log(newStringtwo.split('-'));
+
+ const newStringthree = new String('alex-edward-johnson')
+ console.log(newStringthree.split('-'));
