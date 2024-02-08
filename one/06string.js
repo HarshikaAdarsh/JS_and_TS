@@ -10,8 +10,8 @@
  
  console.log(`Hello my name is ${name} amd my Repo Count is ${repoCount}`);
 
- const gameName = new String ('alexxxx') // key value pairs 
-
+ const gameName = new String ('alexxxx') // key value pairs // declaration like object
+// in output it will show like an array but it is not it is a object in key value pair 
  console.log(gameName[0]);
  console.log(gameName.__proto__);
 
