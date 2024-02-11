@@ -9,5 +9,5 @@ myArr.unshift(0) // use to shift array values by 1
 // unshift will add element in first position 
 myArr.unshift(9)
 myArr.shift()
-
 console.log(myArr);
+myArr.indexOf(3)
