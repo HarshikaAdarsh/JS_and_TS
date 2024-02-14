@@ -9,13 +9,12 @@
 
 //  object literals 
 const mySym = Symbol("key1")
-const mySym = Symbol("key1")
 
 
 const jsUser = {
     name: " Alex ",
     age : 20,
-    
+   [ mySym ] : "myKey1", //how to access symbol data type in objects
     location: "Brooklyn",
     email: "alex@gmail.com",
     isLoggedIn : false,
@@ -25,3 +24,17 @@ const jsUser = {
 console.log(jsUser.age);
 
 console.log(jsUser["LastLoginDays", "email", "name"]); // this is showing only last element of array
+
+console.log(typeof jsUser[mySym]);
+
+// How to change already existing object 
+jsUser.email =  "Alexben@gmail.com"
+
+// how to lock any object value 
+//use=> freeze
+Object.freeze(jsUser)
+jsUser.email = "Benalex@gmail.com"
+console.log(jsUser);
+
+
+// functions in objects
