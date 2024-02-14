@@ -32,9 +32,17 @@ jsUser.email =  "Alexben@gmail.com"
 
 // how to lock any object value 
 //use=> freeze
-Object.freeze(jsUser)
+//Object.freeze(jsUser)
 jsUser.email = "Benalex@gmail.com"
 console.log(jsUser);
 
 
 // functions in objects
+jsUser.greeting = function(){
+    console.log("Hello Js Users");
+}
+jsUser.greetingTwo = function(){
+    console.log(`Hellow js user, this is ${this.name}`);
+}
+console.log(jsUser.greeting());
+console.log(jsUser.greetingTwo());
