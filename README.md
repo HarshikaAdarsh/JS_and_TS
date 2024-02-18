@@ -25,7 +25,8 @@ let result1 = addNum(val1, val2)
 let result = addNum(10,2)
 
 ----------- steps execute this program ----------------------- 
-step 1) Global Execution (Global Environment) => This
+step 1) Global Execution (Global Environment) => This (Memory is created for val1, 
+        val2, addNum, result1, and result2.)
 
 step 2) Memory phase => all variable are collected
      like for eg =  val1 -> undefined
@@ -35,9 +36,9 @@ step 2) Memory phase => all variable are collected
                     result2 -> undefined
 
 Step 3) Execution Phase 
-        val2 <- 10
+        val1 <- 1
         val2 <- 5
-        addNum ->  Here one more executional conetext will be created Like this 
+        addNum ->  Here one more executional context will be created Like this 
 
       ___________________________________                                
       |   New Variable Enviroment       |
@@ -47,7 +48,7 @@ Step 3) Execution Phase
       |        Execution Thread         | 
       |_________________________________|
 
-##### Everytime when fucntions are created these boxes are created which New Executional context
+##### Everytime when functions are created these boxes are created which New Executional context
 
 Now again this new executional context will create memory phase and Executional phase
  1.1) Memory phase : val1 -> undefined
@@ -64,7 +65,7 @@ For result2 two again a new executional context is created
 # Call Stack 
 Last In First Out (LIFO)
 
-ex-> If we have fucntion inside a function  then how call stack will work 
+ex-> If we have function inside a function  then how call stack will work 
 
 One (
     Two(
