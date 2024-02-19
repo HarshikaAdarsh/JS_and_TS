@@ -15,4 +15,7 @@ for (const greet of greeting) {
 
 // Maps => map in itself is a object
 const map = new Map()
-map.
+map.set('IN', "India")
+map.set('USA', "United States of America")
+map.set('fr', "France")
+console.log(map);
