@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 class="heading">DOM learning on chai aur code</h1>
+        <p>Lorem ipsum dolor sit amet</p>
+    </div>
+</body>
+</html>
+
+<!--
+    some queries 
+
+    1) console.log(window)
+    2) console.log(document)
+    3) console.dir(document)
+    4) console.log(document.baseURI)
+    5) document.getElementById('firstHeading')
+
+    if you want to replace any element
+    6) document.getElementById('firstHeading').innerHTML = "<h1> Code and Keep Coding"</h1>
+
+-->
+
+<!--
+    DOM FLOW                               -> TITLE  -> TEXT NODE
+                                 -> HEAD   
+                                           -> META   -> ATTRIBUTES
+      
+   WINDOW -> DOCUMENT -> HTML 
+
+                                                      -> ATTRIBUTES
+                                 -> BODY   -> DIV     -> P     -> text node
+                                                      -> H1    -> text node
+                                                               -> attributes
+-->
