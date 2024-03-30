@@ -5,28 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess A Number</title>
 </head>
-<body style="text-align: center; align-items: center; background-color: rgb(31, 27, 27); color: beige;">
-    <br>
+<body style="text-align: center; align-items: center; background-color: rgb(31, 27, 27); color: beige; margin-top: 20px;">
+    <div class="container " style="margin-top: 70px;" >
        <h1>Number guessing game</h1>
        <h2>Try and guess a random number between 1 and 100.</h2>
        <h2>You have 10 attempts to guess the right number</h2>
-       </br>
-       <form class="form" style="">
+       </div>
+       <form class="form" >
         <label>Guess a number</label>
        </br>
-        <input type="number">
+    </br>
+        <input type="number" id="guessField">
          </br>
-        <input type="submit">Submit guess<input/>
+        </br>
+        <input type="submit" id="subt">
        
         </form>
         <div>
             <p>
-                Previous Guesses: 
+                Previous Guesses: <span class="guesses"></span>
             </p>
             </br>
              <p>
-                Guesses Remaining: 
+                Guesses Remaining: <span class="lastResult">10</span>
              </p>
+             <p class="lowOrHi"> </p>
         </div>
        
         
