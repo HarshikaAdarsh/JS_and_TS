@@ -58,7 +58,7 @@ Now again this new executional context will create memory phase and Executional 
  1.2) Executional Context : num1-> 10 
                             num2 -> 5
                             total -> 15 // Now this will return to the parent global context 
-Now result1 will be stoed in parent Executional context    
+Now result1 will be stored in parent Executional context    
 For result2 two again a new executional context is created                          
 ### NOTE -> After execution is completed thi New Executional context will be deleted                           
                                                   

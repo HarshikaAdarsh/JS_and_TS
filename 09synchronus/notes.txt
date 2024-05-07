@@ -1,0 +1,25 @@
+Javascript (default behaviour)
+
+    1) synchronous
+    2) single threaded
+
+execution context
+   - execute one line of code at a time 
+   - console log 1 
+   - console log 2
+   - call stack 
+
+
+
+   --Blocking Code vs Non Blocking code
+
+      Blocking Code - Block the flow of program 
+                      hold everything if one task is not executed
+                      Read file synchronously
+
+      Non Blocking code - Does not Block execution
+                          do not hold any task instead deligation of task is happening
+                          Read file Asynchronously 
+
+js engine 
+Prefer ss.png 
