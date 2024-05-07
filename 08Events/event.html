@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(26, 26, 45); color: aliceblue;">
+        <h2>Amazing image</h2>
+        <div>
+            <ul id="images">
+                <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photoshop"></li>
+                <li><img width="200px" id="japan" src="https://images.pexels.com/photos/590478/pexels-photo-590478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
+                <li><img width="200px" id="river" src="https://images.pexels.com/photos/2438/nature-forest-waves-trees.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
+                <li><img width="200px" id="owl" src="https://images.pexels.com/photos/86596/owl-bird-eyes-eagle-owl-86596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
+                <li><a style="color: aliceblue;" href="https://google.com" id="google"> Google </a></li>          
+            </ul>
+        </div>    
+</body>
+
+ <!-- In javascripts almost all events run sequentially -->
+     <script>
+        // approch 1
+        // document.getElementById('owl').onclick = function(){
+        //     alert("owl clicked")
+        // }
+
+        // approch 2 best approach
+        // document.getElementById('owl').addEventListener(para1-eventtype ,para2-fuction ,para3-defaultvalue)
+        // document.getElementById('owl').addEventListener('click', function(){
+        //     alert('owlclicked again')
+        // },
+        // false)
+
+
+         // approach 3
+         // attachEvent()
+
+         
+        //event object
+        document.getElementById('japan').addEventListener('click', function(e){
+           console.log("clicked japan")
+        },
+        false)
+        // more topics to explore - type timestamp, 
+        // defaultPrevented, target, toElement, srcElement, currentTarget,
+        //clientX, clientY, screenX, screenY
+        //altkey, ctrlkey, shiftkey, keyCode - we can use thes to make keyboard speed game
+
+        // Event Propagation : it has to context 1) event Bubbling   2) event capturing
+        //event propagation is all about when you click priority of  the event respond
+        // bubbling is from inside to outside(bottum to top) process -> li -> ul ->div
+        // capturing is top to bottum 
+        // thats y the deafult value should be there :-
+        // 1) if false - bubbling 
+        // 2) if true - caputring 
+        document.getElementById('images').addEventListener('click', function(e){
+           console.log("clicked inside the ul")
+        },
+        false)
+
+        // if you do not want propogation 
+        // use - stopPropagation
+
+        document.getElementById('owl').addEventListener('click', function(e){
+            console.log("owl clicked")
+            e.stopPropagation()
+        }, false)
+
+        //Prevent Deafult 
+
+        document.getElementById('google').addEventListener('click', function(e){
+            console.log("google clicked")
+            e.preventDefault();
+            e.stopPropagation();
+        }, true)
+
+        // for in  general 
+        document.querySelector('#images').addEventListener('click', function(e){
+         if(e.target.tagName === 'IMG'){
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+         }
+        }, false)
+        
+     </script>
+
+ </html>  
