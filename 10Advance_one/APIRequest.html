@@ -9,10 +9,13 @@
     
 </body>
 <script>
-    const requestURL = '';
+    const requestURL = 'Https://api.github.com/users/hiteshchoudhary';
     const xhr = new XMLHttpRequest();
     xhr.open('GET',requestURL)
-    console.log(xhr.readyState);
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+    }
+    
     xhr.send()
 </script>
 </html>
