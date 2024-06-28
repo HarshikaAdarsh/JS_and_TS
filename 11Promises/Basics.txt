@@ -1,0 +1,5 @@
+Promise is a object
+A promise have three states
+1)pending
+2)fulfilled
+3)rejected
