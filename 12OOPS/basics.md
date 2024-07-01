@@ -22,4 +22,5 @@ Object literal - it means object in literal. meaning if I am saying two objects 
 Abstraction - data hiding (fetch())
 Encapsulation - 
 Inheritance
-Polymorphism
+Polymorphism -  many forms( methods)
+
